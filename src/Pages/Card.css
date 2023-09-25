@@ -1,0 +1,41 @@
+.container {
+    position: relative;
+    width: 15vw;
+    height: 20vw;
+     /* Perspective for 3D effect */
+     perspective: 1000px;
+  }
+  
+  .card {
+    position: absolute;
+    width: 100%;
+    
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s ease;
+  }
+  
+  .front,
+  .back {
+    position: absolute;
+    width: 99%;
+    height: 99%;
+    backface-visibility: hidden;
+  }
+  
+  .front{
+    background:pink ;
+  }
+  .back {
+    background: blue;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Apply the flip animation when the .flipped class is added to .container */
+  .container.flipped .card {
+    transform: rotateY(180deg);
+  }
+  

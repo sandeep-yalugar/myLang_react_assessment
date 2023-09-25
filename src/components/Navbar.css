@@ -1,0 +1,34 @@
+/* Navbar container style */
+.navbar {
+    background-color: #333; /* Background color of the navbar */
+    color: #fff; /* Text color */
+    padding: 10px 0; /* Adjust the padding as needed */
+  }
+  
+  /* Navbar list style (for the "Home" and "About" links) */
+  .navbar-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around; /* Align links horizontally */
+  }
+  
+  /* Navbar list item style */
+  .navbar-item {
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Navbar link style */
+  .navbar-link {
+    text-decoration: none;
+    color: #fff; /* Text color for links */
+    font-weight: bold; /* Optional: make the text bold */
+  }
+  
+  /* Style for the links when hovered */
+  .navbar-link:hover {
+    text-decoration: underline; /* Underline on hover (optional) */
+  }
+  
