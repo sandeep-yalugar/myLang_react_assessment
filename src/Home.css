@@ -6,7 +6,35 @@
     justify-content: center;
     height: 100vh; /* Centers content vertically on the viewport */
     text-align: center; /* Center-align text within the div */
+    gap:10px;
   }
   
-  
+  .explaination{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+
+  }
+
+  .logBtn{
+    width: 10vw;
+    height: 3vw;
+    background-color: #3498db; /* Button background color */
+  color: #ffffff; /* Button text color */
+  padding: 10px 20px; /* Adjust padding as needed */
+  border: none; /* Remove button border or customize it */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logBtn:hover{
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+    background: #cbdce7;
+  }
   

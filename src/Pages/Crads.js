@@ -5,11 +5,14 @@ const Cards = (props) =>
 {   const cardlis = Array(props.len).fill().map((_,index)=>index);
     const [flipIndex,setFlipIndex] = useState(-1);
     return (
-        <div className="layout">
-           {
-             cardlis.map((_,index) => <Card key={_}  flipped={flipIndex} num={index}  setflip={setFlipIndex} />)
-           }
-        </div>
+      props.login?<div className="layout">
+      {
+        cardlis.map((_,index) => <Card key={_}  flipped={flipIndex} num={index}  setflip={setFlipIndex} />)
+      }
+   </div> : <p>Login to Use this functionality</p>
+  
+  
+        
     )
 }
 

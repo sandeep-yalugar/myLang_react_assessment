@@ -1,9 +1,10 @@
 import './ShareButton.css'
 import IconSHare from './share.png'
 import { FaShareAlt } from 'react-icons/fa'
-const ShareButton = () => {
+const ShareButton = ({login}) => {
 
     return(
+        login?
         <>
         <div className="shareBtn">
             <img src={IconSHare} alt='icon' className='shareIcon' />
@@ -15,7 +16,7 @@ const ShareButton = () => {
             <div className="extraItem"></div>
 
         </div>
-        </>
+        </> : <p>Login to use this functionality</p>
     )
 }
 

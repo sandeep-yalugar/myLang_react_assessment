@@ -3,7 +3,7 @@ import {FaStar} from 'react-icons/fa'
 import './Star.css'
 
 
-const Star  = () => 
+const Star  = ({login}) => 
 {   const starLis = Array(5).fill().map((_,index)=>index)
     const [starInd,setStarInd] = useState(-1)
     const handleStar = (index) =>
@@ -13,6 +13,7 @@ const Star  = () =>
     const windowSize = window.innerWidth; 
 
     return(
+        login?
         <div className='layout2' >
             <p>Ratiing:</p>
         <div className='starLayout'>
@@ -28,7 +29,7 @@ const Star  = () =>
 
         </div>
         <div className='reset' onClick={()=>setStarInd(-1)}>Reset</div>
-        </div>
+        </div> : <p>Login to use this functionality</p>
         
     )
 }

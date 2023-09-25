@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from 'react';
 import './Comments.css'
 
-const Comments = () => {
+const Comments = ({login}) => {
   const [comments, setComments] = useState([]);
   const [comment, setComment] = useState('');
 
@@ -29,6 +29,7 @@ const Comments = () => {
     }
   }, []);
   return (
+    login?
     <div className='main'>
       <div className="form">
         <input className="inp" onChange={(e) => handleChange(e)} value={comment} placeholder='Leave a Comment' />
@@ -43,7 +44,7 @@ const Comments = () => {
           </div>
         ))}
       </div>
-    </div>
+    </div> : <p>Login to use this functionality</p>
   );
 }
 
